@@ -34,7 +34,9 @@ let isTyler = (name) => {
   Create a function called getName that uses prompt() to prompt the user for their name and then returns the given name.
 */
 
-//Code Here
+function getName(){
+  return prompt("What is your name?")
+}
 
 
 
@@ -47,7 +49,9 @@ let isTyler = (name) => {
   Example: "Welcome, Bob Joe"
 */
 
-//Code Here
+function welcome(){
+  alert("Welcome, " + getName())
+}
 
 
 
@@ -57,7 +61,7 @@ let isTyler = (name) => {
   What is the difference between arguments and parameters?
 */
 
-//Answer Here
+let answer = "Parameters are the placeholders used in function, arguments are the actual values that are passed in when the function is invoked."
 
 
 
@@ -67,7 +71,12 @@ let isTyler = (name) => {
   What are all the falsy values in JavaScript and how do you check if something is falsy?
 */
 
-//Answer Here
+NaN
+undefined
+null
+0
+""
+false
 
 
 
