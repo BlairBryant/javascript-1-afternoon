@@ -17,7 +17,14 @@ var name = 'Tyler';
   If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 */
 
-//Code Here
+let isTyler = (name) => {
+  if(name === 'Tyler'){
+    return true
+  }
+  else {
+    return false
+  }
+}
 
 
 
