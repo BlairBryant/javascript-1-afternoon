@@ -86,7 +86,7 @@ false
   Create a function called myName that returns your name
 */
 
-//Code Here
+let myName = () => "Blair";
   
 
 
@@ -94,7 +94,7 @@ false
   Now save the function definition of myName into a new variable called newMyName
 */
 
-//Code Here
+let newMyName = myName
 
 
 
@@ -102,7 +102,7 @@ false
   Now alert the result of invoking newMyName
 */
 
-// Code Here
+alert(newMyName());
 
 
 
@@ -112,15 +112,18 @@ false
   Create a function called outerFn which returns an anonymous function which returns your name.
 */
 
-//Code Here
-
+function outerFn(){
+    return function(){
+      return newMyName();
+    }
+  }
 
 
 /*
   Now save the result of invoking outerFn into a variable called innerFn.
 */
 
-//Code Here
+let innerFn = outerFn();
 
 
 
@@ -128,4 +131,4 @@ false
   Now invoke innerFn.
 */
 
-// Code Here
+innerFn;
